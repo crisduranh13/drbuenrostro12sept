@@ -14,7 +14,7 @@ import {
   Phone,
   Instagram,
   Facebook,
-  Linkedin,
+  Music2,
   ArrowUpRight,
   ChevronRight,
   MessageCircle,
@@ -665,14 +665,18 @@ export default function DemoDrDiegoBuendia() {
           
           {/* Brand Col */}
           <div className="lg:col-span-4 flex flex-col items-start">
-            <img src={IMG.logoWhite} alt="Dr. Diego Buendia Logo" className="h-12 w-auto mb-6" />
+            <div className="flex items-center gap-4 mb-6">
+              <img src={IMG.logoWhite} alt="Dr. Diego Buendia Logo" className="h-12 w-auto" />
+              <span className="font-display text-xl text-white">Dr. Diego Buendia</span>
+            </div>
             <p className="text-[14px] text-white/60 font-light leading-relaxed mb-8">
               Especialista en Ortopedia, Traumatología y Cirugía de Columna. Devolviendo movilidad y calidad de vida con un enfoque humano y tecnología de punta.
             </p>
+            <p className="text-[12px] text-white/40 font-light mb-3">Sígueme en</p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors text-white/80"><Facebook size={18} /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors text-white/80"><Instagram size={18} /></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors text-white/80"><Linkedin size={18} /></a>
+              <a href="https://www.facebook.com/DrDiegoBuendia/" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Dr. Diego Buendia" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors text-white/80"><Facebook size={18} /></a>
+              <a href="https://www.instagram.com/drdiegobuendia" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Dr. Diego Buendia" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors text-white/80"><Instagram size={18} /></a>
+              <a href="https://www.tiktok.com/@drdiegobuendia" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Dr. Diego Buendia" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors text-white/80"><Music2 size={18} /></a>
             </div>
           </div>
 
