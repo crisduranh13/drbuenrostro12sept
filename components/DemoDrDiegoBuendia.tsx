@@ -49,20 +49,20 @@ const consultorios = [
 
 const IMG = {
   // Foto de stock temporal para la portada: entorno médico.
-  hero: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=2400&q=85",
-  drCuadrado: "https://vende24siete.com/images/dr_cuadrado.jpg",
-  logoWhite: "https://vende24siete.com/images/logo_doctor_white_png_.png",
-  logoBlue: "https://vende24siete.com/images/logo_doctor_blue_png_.png",
-  s1: "https://images.unsplash.com/photo-1539815208687-a0f05e15d601?auto=format&fit=crop&w=1200&q=80",
-  s2: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1200&q=80",
-  s3: "https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1200&q=80",
-  s4: "https://images.unsplash.com/photo-1579154491781-5e199df316aa?auto=format&fit=crop&w=1200&q=80",
-  s5: "https://images.unsplash.com/photo-1514416309827-bfb0cf433a2d?auto=format&fit=crop&w=1200&q=80",
-  s6: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=1200&q=80",
-  p1: "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?auto=format&fit=crop&w=1000&q=80",
-  p2: "https://images.unsplash.com/photo-1640876777002-badf6aee5bcc?auto=format&fit=crop&w=1000&q=80",
-  p3: "https://images.unsplash.com/photo-1685997180450-242a65624238?auto=format&fit=crop&w=1000&q=80",
-  cta: "https://images.unsplash.com/photo-1579154491915-611e891d3a5b?auto=format&fit=crop&w=2000&q=80",
+  hero: "/images/hero-entorno-medico.jpg",
+  drCuadrado: "/images/doctor-diego-buendia.jpg",
+  logoWhite: "/images/logo-doctor-blanco.png",
+  logoBlue: "/images/logo-doctor-azul.png",
+  s1: "/images/enfermedad-degenerativa-columna.jpg",
+  s2: "/images/deformidad-columna.jpg",
+  s3: "/images/desgaste-cartilago.jpg",
+  s4: "/images/infeccion-hueso-articulacion.jpg",
+  s5: "/images/lesion-deportiva.jpg",
+  s6: "/images/deformidad-osea.jpg",
+  p1: "/images/fractura-esguince-luxacion.jpg",
+  p2: "/images/lesion-ligamento-tendon.jpg",
+  p3: "/images/artrosis-articulaciones.jpg",
+  cta: "/images/consulta-ortopedia.jpg",
 };
 
 // Fotos de stock temporales para las tarjetas de padecimientos.
@@ -271,7 +271,7 @@ export default function DemoDrDiegoBuendia() {
              <img src={IMG.logoBlue} alt="Logo" className={`h-8 w-auto transition-opacity duration-300 ${scrolled ? 'opacity-100' : 'opacity-0 hidden sm:block'}`} />
              {!scrolled && (
                 <span className="font-display text-[18px] text-white tracking-wide drop-shadow-md">
-                  Dr. Diego Buendía
+                  Dr. Diego Buendia
                 </span>
              )}
           </div>
@@ -349,7 +349,7 @@ export default function DemoDrDiegoBuendia() {
         <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ containerType: "size" }} aria-hidden="true">
           <iframe
             title="Video de fondo de la portada"
-            src="https://www.youtube.com/embed/eH6Rl-GKjXw?autoplay=1&mute=1&loop=1&playlist=eH6Rl-GKjXw&controls=0&showinfo=0&rel=0&playsinline=1"
+            src="https://www.youtube.com/embed/LI5insKWPN0?autoplay=1&mute=1&loop=1&playlist=LI5insKWPN0&controls=0&showinfo=0&rel=0&playsinline=1"
             allow="autoplay; encrypted-media"
             tabIndex={-1}
             className="absolute left-1/2 top-1/2 w-[max(100cqw,177.78cqh)] h-[max(100cqh,56.25cqw)] -translate-x-1/2 -translate-y-1/2 border-0 pointer-events-none"
@@ -431,7 +431,7 @@ export default function DemoDrDiegoBuendia() {
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-xl aspect-square">
               <img
                 src={IMG.drCuadrado}
-                alt="Dr. Diego Buendía en consulta"
+                alt="Dr. Diego Buendia en consulta"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-[1.5s]"
               />
             </div>
@@ -440,7 +440,7 @@ export default function DemoDrDiegoBuendia() {
           <div>
             <Reveal>
               <p className="text-[12px] uppercase mb-4 text-accent tracking-[0.2em] font-semibold">
-                Dr. Diego Eduardo Buendía Valdez
+                Dr. Diego Eduardo Buendia Valdez
               </p>
             </Reveal>
             <Reveal delay={100}>
@@ -451,7 +451,7 @@ export default function DemoDrDiegoBuendia() {
             <Reveal delay={200}>
               <div className="mt-8 flex flex-col gap-5 text-[16px] leading-relaxed text-muted font-light">
                 <p>
-                  Soy Diego Buendía, ortopedista y cirujano de columna. Estudié
+                  Soy Diego Buendia, ortopedista y cirujano de columna. Estudié
                   Medicina en la UNAM, donde también hice la especialidad en
                   Ortopedia y la alta especialidad en Cirugía de Columna.
                   Completé mi formación en cirugía de columna en el IMSS.
@@ -483,7 +483,7 @@ export default function DemoDrDiegoBuendia() {
                   <span>Maestría en Bioética y maestría en Administración de Instituciones de Salud.</span>
                 </li>
               </ul>
-               <img src={IMG.logoBlue} alt="Firma Dr. Buendía" className="h-12 w-auto mt-10 opacity-80" />
+               <img src={IMG.logoBlue} alt="Firma Dr. Buendia" className="h-24 w-auto mt-10 opacity-80" />
             </Reveal>
           </div>
         </div>
@@ -665,7 +665,7 @@ export default function DemoDrDiegoBuendia() {
           
           {/* Brand Col */}
           <div className="lg:col-span-4 flex flex-col items-start">
-            <img src={IMG.logoWhite} alt="Dr. Diego Buendía Logo" className="h-12 w-auto mb-6" />
+            <img src={IMG.logoWhite} alt="Dr. Diego Buendia Logo" className="h-12 w-auto mb-6" />
             <p className="text-[14px] text-white/60 font-light leading-relaxed mb-8">
               Especialista en Ortopedia, Traumatología y Cirugía de Columna. Devolviendo movilidad y calidad de vida con un enfoque humano y tecnología de punta.
             </p>
@@ -721,10 +721,9 @@ export default function DemoDrDiegoBuendia() {
 
         {/* Copyright */}
         <div className="max-w-6xl mx-auto pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-[12px] text-white/40 font-light">
-          <p>© {new Date().getFullYear()} Dr. Diego Buendía. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Dr. Diego Buendia. Todos los derechos reservados.</p>
           <div className="flex gap-6">
             <button ref={privacyTrigger} type="button" onClick={() => setPrivacyOpen(true)} aria-haspopup="dialog" className="hover:text-white transition-colors underline underline-offset-4">Aviso de Privacidad</button>
-            <a href="#" className="hover:text-white transition-colors">Términos y Condiciones</a>
           </div>
         </div>
       </footer>
@@ -743,7 +742,7 @@ export default function DemoDrDiegoBuendia() {
           </button>
         </div>
         <div className="p-6 sm:p-8 space-y-5 text-[15px] leading-relaxed text-muted">
-          <p><strong className="text-ink">Responsable:</strong> El Dr. Diego Eduardo Buendía Valdez, con consultorio en Periférico Sur 5246, Coyoacán, CDMX.</p>
+          <p><strong className="text-ink">Responsable:</strong> El Dr. Diego Eduardo Buendia Valdez, con consultorio en Periférico Sur 5246, Coyoacán, CDMX.</p>
           <p><strong className="text-ink">Datos recabados:</strong> Para agendar cita y atención médica (nombre, teléfono, correo) y datos sensibles de salud.</p>
           <p><strong className="text-ink">Uso:</strong> Expediente clínico, diagnóstico, tratamiento y contacto.</p>
           <p><strong className="text-ink">Con quién se comparten:</strong> Hospitales, autoridades sanitarias y aseguradoras a petición del paciente.</p>

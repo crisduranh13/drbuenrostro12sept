@@ -1,7 +1,7 @@
-# Demo — Dr. Diego Buendía
+# Demo — Dr. Diego Buendia
 
 Landing demo comercial (no producto final) para mostrar una versión moderna
-del sitio del Dr. Diego Buendía. Next.js 14 (App Router) + TypeScript +
+del sitio del Dr. Diego Buendia. Next.js 14 (App Router) + TypeScript +
 TailwindCSS + Framer Motion.
 
 ## Cómo correrlo
